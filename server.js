@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 const session = require('express-session');
 
-const PORT = 8666;
+const PORT = process.env.PORT || 8666;
 let app = express();
 let server = require('http').Server(app);
 
